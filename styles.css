@@ -1,0 +1,207 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container Layout */
+.resume-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Main Section */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adds spacing between image and text */
+}
+
+.profile-picture {
+  width: 250px; /* Adjust size as needed */
+  height: 250px;
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover; /* Ensures the image is cropped correctly */
+}
+
+.main-section {
+  flex: 3;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.main-section h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.main-section h2 {
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.main-section h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 8px;
+  color: #333;
+}
+
+.main-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.experience {
+  margin-bottom: 30px;
+}
+
+.experience h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0066cc;
+}
+
+.experience p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0066cc;
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  padding-left: 20px;
+}
+
+.sidebar li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.sidebar p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.sidebar a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* General Counter Styling */
+.counter {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #eaeaea;
+  text-align: center; /* Center align text and counter */
+  background: linear-gradient(135deg, #252b2c, #242a2b); /* Modern gradient background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#welcome {
+  font-size: 20px;
+  color: #eaeaea;
+}
+
+/* Stylish Counter Text */
+#visitor-counter {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0056b3;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background: linear-gradient(90deg, #ff8c00, #ffef00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cool Number Animation */
+.animated-counter {
+  animation: pop 1.5s infinite alternate;
+}
+
+/* Keyframes for Number Animation */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .main-section, .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sidebar {
+    margin-top: 30px;
+  }
+}
